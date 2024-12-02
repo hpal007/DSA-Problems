@@ -1,9 +1,5 @@
-use core::num;
-use std::vec;
 
-
-
-// Solution for problem 1: Transpose of
+// problem 1: Transpose of
 pub fn transpose(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
     let r = matrix.len();
     let c = matrix[0].len();
@@ -19,7 +15,7 @@ pub fn transpose(matrix: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
     output
 }
 
-// Solution for problem 2: Square of sorted arrays
+// problem 2: Square of sorted arrays
 pub fn sorted_squares_1(nums: Vec<i32>) -> Vec<i32> {
     // simple way to do it with sort. 
     let mut output:Vec<i32> = Vec::new();
@@ -30,6 +26,7 @@ pub fn sorted_squares_1(nums: Vec<i32>) -> Vec<i32> {
     output
 }
 
+// problem 2: Square of sorted arrays (better way to do it)
 pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
     let num_length = nums.len();
     let mut output: Vec<i32> = vec![0; num_length];
@@ -57,6 +54,7 @@ pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
     output
 }
 
+// problem 3: 88. merge sorted arrays 
 pub fn merge_sorted_array(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
     let mut i = m -1; // pointer to last elment in nums1 
     let mut j = n -1;  // pointer to last elment in nums2

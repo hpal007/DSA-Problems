@@ -1,6 +1,6 @@
 #![allow(dead_code)]  
 
-mod easy {
+mod array {
     pub mod solutions;
 
     // pub fn run(){
@@ -29,5 +29,5 @@ mod easy {
 
 
 fn main() {
-   easy::run()
+   array::run()
 }
