@@ -1,5 +1,3 @@
-Time complexity 
-
 O(1) >> O(logN) >> O(N) >> O(NlogN) >> O(N^2) >> O(N^logN) >> O(2^N) >> O(N!)
 
 # Time Complexity Overview
