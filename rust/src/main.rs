@@ -27,9 +27,17 @@ mod array {
     // }
 
     // problem 4
+    // pub fn run() {
+    //     let mut nums = vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+    //     let output = solutions::remove_duplicates(&mut nums);
+    //     println!("{output:?}")
+    // }
+    
+    // problem 5
     pub fn run() {
-        let mut nums = vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-        let output = solutions::remove_duplicates(&mut nums);
+        let mut nums = vec![0,1,2,2,3,0,4,2];
+        let val = 2;
+        let output = solutions::remove_element(&mut nums, val);
         println!("{output:?}")
     }
 }
