@@ -79,7 +79,7 @@ pub fn merge_sorted_array(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n:
     println!("{nums1:?}");
 }
 
- // problem 4: 26. Remove Duplicates from Sorted Array
+// problem 4: 26. Remove Duplicates from Sorted Array
 pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
     let mut u = 0;
 
@@ -94,16 +94,16 @@ pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
     return u as i32 + 1;
 }
 
- // problem 4: 27. Remove Element
+// problem 5: 27. Remove Element
 pub fn remove_element(nums: &mut Vec<i32>, val: i32) -> i32 {
-        let mut k = 0;
+    let mut k = 0;
 
-        for i in 0..nums.len(){
-            if nums[i] != val{
-                nums[k] = nums[i];
-                k +=1
-            }
+    for i in 0..nums.len() {
+        if nums[i] != val {
+            nums[k] = nums[i];
+            k += 1
         }
-        println!("{nums:?}");
-        k as i32
+    }
+    println!("{nums:?}");
+    k as i32
 }
