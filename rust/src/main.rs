@@ -40,9 +40,19 @@ mod array {
     //     let output = solutions::remove_element(&mut nums, val);
     //     println!("{output:?}")
     // }
+
+    //  problem 6
+    // pub fn run() {
+    //     let s = String::from("babad");
+    //     let output = solutions::longest_palindrome(&s);
+    //     println!("{output:?}")
+    // }
+
+    //  problem 7
     pub fn run() {
-        let s = String::from("babad");
-        let output = solutions::longest_palindrome(&s);
+        let words: Vec<String> =vec!["abc".to_string(),"bcd".to_string(),"aaaa".to_string(),"cbc".to_string()];
+        let x: char = 'a';
+        let output = solutions::find_words_containing(words, x);
         println!("{output:?}")
     }
 }

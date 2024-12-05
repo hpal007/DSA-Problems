@@ -153,3 +153,15 @@ pub fn longest_palindrome(s: &str) -> String {
     ans
 }
 
+pub fn find_words_containing(words: Vec<String>, x: char)-> Vec<i32>{
+    let mut output: Vec<i32> = vec![];
+
+    for i in 0..words.len(){
+        if words[i].contains(x){
+            output.push(i as i32);
+        }
+    }
+
+    return output;
+
+}
