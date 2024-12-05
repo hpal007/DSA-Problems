@@ -32,12 +32,17 @@ mod array {
     //     let output = solutions::remove_duplicates(&mut nums);
     //     println!("{output:?}")
     // }
-    
+
     // problem 5
+    // pub fn run() {
+    //     let mut nums = vec![0,1,2,2,3,0,4,2];
+    //     let val = 2;
+    //     let output = solutions::remove_element(&mut nums, val);
+    //     println!("{output:?}")
+    // }
     pub fn run() {
-        let mut nums = vec![0,1,2,2,3,0,4,2];
-        let val = 2;
-        let output = solutions::remove_element(&mut nums, val);
+        let s = String::from("babad");
+        let output = solutions::longest_palindrome(&s);
         println!("{output:?}")
     }
 }
