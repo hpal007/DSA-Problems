@@ -21,17 +21,17 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 
 def removeElement(nums: List[int], val: int) -> int:
-    r = 0 #pointer to position where we want remove elment from
+    r = 0  # pointer to position where we want remove elment from
 
     for i in range(0, len(nums)):
-        if nums[i] != val:  
+        if nums[i] != val:
             nums[r] = nums[i]
-            r +=1
+            r += 1
     print(nums)
     print(r)
 
 
-nums = [0,1,2,2,3,0,4,2]
+nums = [0, 1, 2, 2, 3, 0, 4, 2]
 
 
 val = 2

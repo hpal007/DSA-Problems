@@ -17,6 +17,7 @@ Explanation: "e" occurs in both words: "leet", and "code". Hence, we return indi
 
 from typing import List
 
+
 def findWordsContaining(words: List[str], x: str) -> List[int]:
     output = []
     for i in range(len(words)):

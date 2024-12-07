@@ -17,15 +17,19 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 """
 
+
 def removeDuplicates(nums: List[int]) -> int:
     l = len(nums)
-    u = 0 # pointer to unique element in nums
-    for j in range(1,l):
-        if nums[u] != nums[j]: #update unique pointer when encounter unique value only else skip
-            u +=1
+    u = 0  # pointer to unique element in nums
+    for j in range(1, l):
+        if (
+            nums[u] != nums[j]
+        ):  # update unique pointer when encounter unique value only else skip
+            u += 1
             nums[u] = nums[j]
 
-    print(u+1)
+    print(u + 1)
     print(nums)
 
-removeDuplicates([0,1,1,1,2])    
+
+removeDuplicates([0, 1, 1, 1, 2])
