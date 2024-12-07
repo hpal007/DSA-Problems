@@ -49,14 +49,26 @@ mod array {
     // }
 
     //  problem 7
-    pub fn run() {
-        let words: Vec<String> =vec!["abc".to_string(),"bcd".to_string(),"aaaa".to_string(),"cbc".to_string()];
-        let x: char = 'a';
-        let output = solutions::find_words_containing(words, x);
-        println!("{output:?}")
+    // pub fn run() {
+    //     let words: Vec<String> =vec!["abc".to_string(),"bcd".to_string(),"aaaa".to_string(),"cbc".to_string()];
+    //     let x: char = 'a';
+    //     let output = solutions::find_words_containing(words, x);
+    //     println!("{output:?}")
+    // }
+}
+
+mod patterns {
+    pub mod solutions;
+
+    pub fn run(){
+        let m = 5;
+        let n  = 4;
+        solutions::rectangular_star_pattern(n, m);
+
     }
+
 }
 
 fn main() {
-    array::run()
+    patterns::run()
 }
