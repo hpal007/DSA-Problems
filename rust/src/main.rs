@@ -1,74 +1,13 @@
 #![allow(dead_code)]
 
-mod array {
-    pub mod solutions;
-    // problem 1
-    // pub fn run(){
-    //     let matrix = vec![vec![1,2,3],vec![4,5,6],vec![7,8,9]];
-    //     let output_matrix = solutions::transpose(matrix);
-    //     println!("{output_matrix:?}");
-    // }
+use problems::arrays;
 
-    // problem 2
-    // pub fn run (){
-    //     let input = vec![-4,-1,0,3,10];
-    //     let output = solutions::sorted_squares(input);
-    //     println!("{output:?}");
-    // }
-
-    // problem 3
-    // pub fn run (){
-    //     let mut nums1 = vec![1,2,3,0,0,0];
-    //     let m = 3;
-    //     let mut nums2 = vec![2,5,6];
-    //     let n = 3;
-    //     let output = solutions::merge_sorted_array(&mut nums1, m, &mut nums2, n);
-    //     println!("{output:?}");
-    // }
-
-    // problem 4
-    // pub fn run() {
-    //     let mut nums = vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
-    //     let output = solutions::remove_duplicates(&mut nums);
-    //     println!("{output:?}")
-    // }
-
-    // problem 5
-    // pub fn run() {
-    //     let mut nums = vec![0,1,2,2,3,0,4,2];
-    //     let val = 2;
-    //     let output = solutions::remove_element(&mut nums, val);
-    //     println!("{output:?}")
-    // }
-
-    //  problem 6
-    // pub fn run() {
-    //     let s = String::from("babad");
-    //     let output = solutions::longest_palindrome(&s);
-    //     println!("{output:?}")
-    // }
-
-    //  problem 7
-    // pub fn run() {
-    //     let words: Vec<String> =vec!["abc".to_string(),"bcd".to_string(),"aaaa".to_string(),"cbc".to_string()];
-    //     let x: char = 'a';
-    //     let output = solutions::find_words_containing(words, x);
-    //     println!("{output:?}")
-    // }
-}
-
-mod patterns {
-    pub mod solutions;
-
-    pub fn run(){
-        let m = 5;
-        let n  = 4;
-        solutions::rectangular_star_pattern(n, m);
-
-    }
-
+mod problems {
+    pub mod arrays;
 }
 
 fn main() {
-    patterns::run()
+    let input = vec![-4, -1, 0, 3, 10];
+    let op = arrays::sorted_squares::sorted_squares(input);
+    println!("{op:?}")
 }
