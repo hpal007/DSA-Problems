@@ -1,4 +1,4 @@
-// problem 2: Square of sorted arrays
+//  Square of sorted arrays
 pub fn sorted_squares_1(nums: Vec<i32>) -> Vec<i32> {
     // simple way to do it with sort.
     let mut output: Vec<i32> = Vec::new();
@@ -9,7 +9,7 @@ pub fn sorted_squares_1(nums: Vec<i32>) -> Vec<i32> {
     output
 }
 
-// problem 2: Square of sorted arrays (better way to do it)
+// Square of sorted arrays (better way to do it)
 pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
     let num_length = nums.len();
     let mut output: Vec<i32> = vec![0; num_length];
@@ -36,4 +36,9 @@ pub fn sorted_squares(nums: Vec<i32>) -> Vec<i32> {
     output
 }
 
-// let input = vec![-4,-1,0,3,10];
+
+
+// INPUT
+// let input = vec![-4, -1, 0, 3, 10];
+// let op = arrays::sorted_squares::sorted_squares(input);
+// println!("{op:?}")
