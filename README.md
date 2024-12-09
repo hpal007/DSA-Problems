@@ -25,3 +25,9 @@ This document provides an overview of common time complexities in algorithms, in
 | Linear                  | O(N)        | Space grows linearly with input size.                        | Storing elements in an array of size N.      |
 | Linearithmic            | O(N log N)  | Space increases proportionally to N times log N.            | Some efficient sorting algorithms.            |
 | Quadratic               | O(N^2)      | Space grows proportionally to the square of input size.      | Creating a two-dimensional array.             |
+
+
+Note: 
+
+    If number of interation is depended on division then time complexity will be logrithmic. 
+    
