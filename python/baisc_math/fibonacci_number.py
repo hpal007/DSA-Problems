@@ -32,3 +32,7 @@ def fibonacci_series(n):
             print(curr)
  
 fibonacci_series(5)
+
+
+
+# https://takeuforward.org/arrays/print-fibonacci-series-up-to-nth-term/

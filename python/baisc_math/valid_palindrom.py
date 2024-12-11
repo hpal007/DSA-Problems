@@ -24,3 +24,6 @@ s = " "
 
 val = isPalindrome(s)
 print(val)
+
+
+# https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/
