@@ -1,2 +1,10 @@
 target
 python/solutions.ipynb
+.vscode
+__pycache__
+*.pyc
+.DS_Store
+.idea
+env/
+.venv/
+env.bak/
