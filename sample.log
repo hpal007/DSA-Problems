@@ -1,0 +1,9 @@
+2025-09-25 11:05:21,140 INFO [system] Application started.
+2025-09-25 11:05:23,515 WARN [auth] Invalid login attempt for user 'demo'.
+2025-09-25 11:05:29,422 ERROR [db] Connection timeout for database 'main'.
+2025-09-25 11:05:34,700 INFO [service] Completed job 8274 successfully.
+2025-09-25 11:06:02,234 DEBUG [scheduler] Task scheduled: cleanup_temp_files.
+2025-09-25 11:06:10,876 INFO [user] User 'admin' logged out.
+2025-09-25 11:06:21,402 TRACE [api] Received request: GET /api/v1/logs
+2025-09-25 11:07:02,101 EVENT [event-processor] Event ID 4421 triggered.
+2025-09-25 11:05:29,422 ERROR [db] Connection failed for database 'main'.
